@@ -6,7 +6,7 @@ ENV CHECKSUM 533e46ffcafda24e91aabbbc5873b7d1153d538dde599927f77e1595793ddb3e
 
 ADD baikal.sh /usr/local/bin/baikal
 
-RUN apk --no-cache add unzip openssl lighttpd php5-cgi php5-ctype php5-dom \
+RUN apk --no-cache add unzip openssl bash lighttpd php5-cgi php5-ctype php5-dom \
         php5-pdo_sqlite php5-pdo_mysql php5-xml php5-openssl php5-json \
         php5-xmlreader \
     && wget https://github.com/fruux/Baikal/releases/download/$VERSION/baikal-$VERSION.zip \
